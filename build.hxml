@@ -1,0 +1,16 @@
+-cp src
+
+# Produces source map
+-debug
+
+# Entrypoint
+-main Main
+
+# If there is no Main class present:
+# https://code.haxe.org/category/compilation/compiling-libraries-without-main-class.html
+foo.MyUtils
+
+-js bin/app.js
+
+# Dead Code Elimination
+-dce full
